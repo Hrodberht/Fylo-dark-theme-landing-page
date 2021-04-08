@@ -1,0 +1,38 @@
+@import url('normalize.css');
+
+/* Base */
+
+html {
+    box-sizing: border-box;
+}
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Holy Grail Layout */
+
+.container {
+    display: grid;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+    grid-template-rows: 200px 1fr auto;
+    grid-gap: 0;
+
+    height: calc(100vh - 20px);
+}
+
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
