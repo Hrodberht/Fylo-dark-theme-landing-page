@@ -4,12 +4,50 @@
 
 /* Base */
 
+:root {
+    --dark-blue-intro: hsl(217, 28%, 15%);
+    --dark-blue-main: hsl(218, 28%, 13%);
+    --dark-blue-footer: hsl(216, 53%, 9%);
+    --dark-blue-feedback: hsl(219, 30%, 18%);
+
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --light-red: hsl(0, 100%, 63%);
+
+    --white: hsl(0, 0%, 100%);
+}
+
 html {
     box-sizing: border-box;
 }
   
   *, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-color: var(--dark-blue-main);
+    color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 /* Holy Grail Layout */
