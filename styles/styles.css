@@ -89,7 +89,28 @@ button {
 
 /* Main */
 
+.intro {
+    margin-top: 20px;
+}
 
+.intro__img {
+    width: 100vw;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.intro__heading {
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+.intro__description {
+    padding: 0 30px;
+    text-align: center;
+    line-height: 1.5em;
+}
 
 /* Footer */
 
