@@ -60,11 +60,36 @@ button {
         "main"
         "footer";
 
-    grid-template-rows: 200px 1fr auto;
+    grid-template-rows: 91px 1fr auto;
     grid-gap: 0;
 
     height: calc(100vh - 20px);
 }
+
+/* Header */
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo__img {
+    width: 90px;
+    margin-top: 8px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+/* Main */
+
+
 
 /* Footer */
 
