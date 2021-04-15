@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* Base */
+/******* Base *******/
 
 :root {
     --dark-blue-intro: hsl(217, 28%, 15%);
@@ -50,7 +50,7 @@ button {
 	outline: inherit;
 }
 
-/* Holy Grail Layout */
+/******* Holy Grail Layout *******/
 
 .container {
     display: grid;
@@ -66,7 +66,7 @@ button {
     height: calc(100vh - 20px);
 }
 
-/* Header */
+/******* Header *******/
 
 .header__wrapper {
     display: flex;
@@ -87,17 +87,13 @@ button {
     font-size: 0.8em;
 }
 
-/* Main */
+/******* Main *******/
+
+/* Intro */
 
 .intro {
     margin-top: 20px;
-}
-
-.intro__img {
-    width: 100vw;
-    max-width: 500px;
-    display: block;
-    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .intro__heading {
@@ -112,7 +108,83 @@ button {
     line-height: 1.5em;
 }
 
-/* Footer */
+.intro__link {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    width: 240px;
+    padding: 15px 45px;
+    border-radius: 50px;
+    background-color: var(--blue);
+    font-size: 0.9em;    
+}
+
+/* Benefits */
+
+.benefits {
+    margin-bottom: 100px;
+}
+
+.benefits__card {
+    padding: 25px;
+    text-align: center;
+}
+
+.benefits__icon-box {
+    margin-bottom: 30px;
+}
+
+.benefits__icon {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+}
+
+.benefits__feature {
+    font-size: 1.1em;
+}
+
+.benefits__description {
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+/* Objective */
+
+.objective__img-box {
+    margin-bottom: 50px;
+}
+
+.objective__heading {
+    padding: 0 25px;
+}
+
+.objective__description {
+    padding: 0 25px;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+.objective__demo {
+    display: inline;
+    margin: 0 25px;
+    font-size: 0.9em;
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+    padding-bottom: 4px;
+}
+
+/* Illustrations */
+
+.illustration-svg {
+    width: 100vw;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/******* Footer *******/
 
 .attribution {
     font-size: 11px;
