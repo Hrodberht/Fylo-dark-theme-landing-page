@@ -151,6 +151,10 @@ button {
 
 /* Objective */
 
+.objective {
+    margin-bottom: 150px;
+}
+
 .objective__img-box {
     margin-bottom: 50px;
 }
@@ -172,6 +176,50 @@ button {
     color: var(--cyan);
     border-bottom: 1px solid var(--cyan);
     padding-bottom: 4px;
+}
+
+/* Feedback */
+
+.feedback {
+    padding-top: 9px;
+    background-image: url('../images/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 40px;
+    margin-bottom: 150px;
+}
+
+.feedback__card {
+    background-color: var(--dark-blue-feedback);
+    padding: 30px 20px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    
+}
+
+.feedback__comment {
+    margin: 0;
+}
+
+.feedback__comment {
+    margin-bottom: 20px;
+}
+
+.author-flex-box {
+    display: flex;
+    align-items: center;
+}
+
+.author__img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.author__role {
+    font-size: 0.7em;
 }
 
 /* Illustrations */
