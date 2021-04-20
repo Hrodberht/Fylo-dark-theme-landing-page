@@ -15,6 +15,8 @@
     --light-red: hsl(0, 100%, 63%);
 
     --white: hsl(0, 0%, 100%);
+
+    --grey: hsl(0, 0%, 78%);
 }
 
 html {
@@ -50,6 +52,10 @@ button {
 	outline: inherit;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /******* Holy Grail Layout *******/
 
 .container {
@@ -83,11 +89,23 @@ button {
     display: flex;
     justify-content: space-between;
     width: 210px;
-    list-style-type: none;
     font-size: 0.8em;
 }
 
 /******* Main *******/
+
+/* Buttons */
+
+.button {
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+    padding: 20px 45px;
+    border-radius: 50px;
+    background: linear-gradient(to right, var(--cyan), var(--blue));
+    font-size: 0.9em;
+    font-weight: 700;
+}
 
 /* Intro */
 
@@ -109,14 +127,8 @@ button {
 }
 
 .intro__link {
-    display: block;
-    text-align: center;
-    margin: 30px auto;
+
     width: 240px;
-    padding: 15px 45px;
-    border-radius: 50px;
-    background-color: var(--blue);
-    font-size: 0.9em;    
 }
 
 /* Benefits */
@@ -222,6 +234,43 @@ button {
     font-size: 0.7em;
 }
 
+/* Subscribe */
+
+.subscribe {
+    background-color: var(--dark-blue-feedback);
+    margin: 20px 20px 80px;
+    padding: 30px 20px 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.subscribe__heading {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.subscribe__description {
+    line-height: 1.6em;
+    margin-bottom: 30px;
+}
+
+.subscribe__input {
+    width: 290px;
+    padding: 20px 0 20px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 0.8em;
+}
+
+.subscribe__input::placeholder {
+    color: var(--grey);
+}
+
+.subscribe__btn {
+    width: 290px;
+    margin-top: 25px;
+}
+
 /* Illustrations */
 
 .illustration-svg {
@@ -233,6 +282,58 @@ button {
 }
 
 /******* Footer *******/
+
+.footer {
+    padding: 25px;
+}
+
+.footer__logo-div {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.footer__logo {
+    width: 170px;
+}
+
+.address {
+    font-style: normal;
+    line-height: 1.5em;
+    margin-bottom: 70px;
+}
+
+.address__list {
+    padding-left: 0;
+}
+
+.address__item {
+    margin-bottom: 15px;
+}
+
+.address__logo {
+    fill: var(--white);
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+
+.address__item:first-child {
+    display: flex;
+}
+
+.address__location {
+    height: 35px;
+    top: 0;
+}
+
+.address-text {
+    padding-left: 10px;
+}
+
+.footer__list {
+    padding-left: 0;
+    line-height: 2.3em;
+}
 
 .attribution {
     font-size: 11px;
