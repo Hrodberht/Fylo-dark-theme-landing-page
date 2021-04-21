@@ -14,6 +14,9 @@
     --blue: hsl(198, 60%, 50%);
     --light-red: hsl(0, 100%, 63%);
 
+    --cyan-hover: hsl(176, 63%, 76%);
+    --blue-hover: hsl(198, 56%, 70%);
+
     --white: hsl(0, 0%, 100%);
 
     --grey: hsl(0, 0%, 78%);
@@ -92,6 +95,11 @@ ul {
     font-size: 0.8em;
 }
 
+.nav__link:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 1px var(--white);
+}
+
 /******* Main *******/
 
 /* Buttons */
@@ -105,6 +113,10 @@ ul {
     background: linear-gradient(to right, var(--cyan), var(--blue));
     font-size: 0.9em;
     font-weight: 700;
+}
+
+.button:hover {
+    background: linear-gradient(to right, var(--cyan-hover), var(--blue-hover));
 }
 
 /* Intro */
@@ -127,7 +139,6 @@ ul {
 }
 
 .intro__link {
-
     width: 240px;
 }
 
@@ -190,6 +201,12 @@ ul {
     padding-bottom: 4px;
 }
 
+.objective__demo:hover {
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
+
 /* Feedback */
 
 .feedback {
@@ -242,6 +259,7 @@ ul {
     padding: 30px 20px 15px 20px;
     border-radius: 8px;
     text-align: center;
+    position: relative;
 }
 
 .subscribe__heading {
@@ -285,6 +303,10 @@ ul {
 
 .footer {
     padding: 0 25px;
+    background-color: var(--dark-blue-footer);
+
+    padding-top: 280px;
+    margin-top: -280px;
 }
 
 .footer__logo-div {
@@ -336,6 +358,10 @@ ul {
     margin-bottom: 30px;
 }
 
+.list__link:hover {
+    font-weight: 700;
+}
+
 .footer__social {
     display: flex;
     margin: 70px auto 40px;
@@ -347,6 +373,12 @@ ul {
     padding: 7px;
     border: 1px solid var(--white);
     border-radius: 50%;
+    fill: var(--white);
+}
+
+.social__icon:hover {
+    fill: var(--cyan);
+    border: 1px solid var(--cyan);
 }
 
 
