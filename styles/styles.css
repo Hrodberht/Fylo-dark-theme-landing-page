@@ -284,7 +284,7 @@ ul {
 /******* Footer *******/
 
 .footer {
-    padding: 25px;
+    padding: 0 25px;
 }
 
 .footer__logo-div {
@@ -333,7 +333,22 @@ ul {
 .footer__list {
     padding-left: 0;
     line-height: 2.3em;
+    margin-bottom: 30px;
 }
+
+.footer__social {
+    display: flex;
+    margin: 70px auto 40px;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.social__icon {
+    padding: 7px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
 
 .attribution {
     font-size: 11px;
