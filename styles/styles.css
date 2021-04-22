@@ -75,6 +75,12 @@ ul {
     height: calc(100vh - 20px);
 }
 
+/******* Utilities *******/
+
+.hidden {
+    display: none;
+}
+
 /******* Header *******/
 
 .header__wrapper {
@@ -270,6 +276,22 @@ ul {
 .subscribe__description {
     line-height: 1.6em;
     margin-bottom: 30px;
+}
+
+.subscribe__email {
+    height: 60px;
+}
+
+.subscribe__error {
+    font-size: 0.8em;
+    color: var(--light-red);
+    width: 230px;
+    margin: 5px auto;
+    text-align: start;
+}
+
+.error {
+    margin: 0;
 }
 
 .subscribe__input {

@@ -197,9 +197,15 @@
     </p>
 
     <form class="subscribe__form">
-      <input class="subscribe__input" id="email" name="email" placeholder="email@example.com">
+      <div class="subscribe__email">
+        <input class="subscribe__input" id="email" name="email" placeholder="email@example.com">
 
-      <button class="button subscribe__btn">Get Started For Free</button>
+        <div class="subscribe__error hidden" id="subscribe__error">
+          <p class="error">Please enter a valid email address</p>
+        </div>
+      </div>
+
+      <button class="button subscribe__btn" id="button" type="button">Get Started For Free</button>
     </form>
   </section>
 </main>
@@ -270,5 +276,6 @@
   </p>
 </footer>
 </div>
+<script src="scripts/script.js"></script>
 </body>
 </html>
