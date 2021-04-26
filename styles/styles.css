@@ -34,6 +34,8 @@ body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     background-color: var(--dark-blue-main);
     color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -325,10 +327,16 @@ ul {
 
 .footer {
     padding: 0 25px;
-    background-color: var(--dark-blue-footer);
+    background-color: var(--dark-blue-footer) !important;
 
     padding-top: 280px;
     margin-top: -280px;
+
+    margin-left: -1600px;
+    margin-right: -1600px;
+
+    padding-left: 1600px;
+    padding-right: 1600px;
 }
 
 .footer__logo-div {
@@ -412,3 +420,4 @@ ul {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
