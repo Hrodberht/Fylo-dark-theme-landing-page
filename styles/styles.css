@@ -498,4 +498,100 @@ ul {
         font-size: 1.9em;
         max-width: 350px;
     }
+
+    /* Feedback */
+
+    .feedback {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        background-size: 45px;
+        background-position-x: 7px;
+        background-position-y: 4px;
+
+        margin-top: -20px;
+        padding-top: 20px;
+    }
+
+    .feedback__card {
+        margin: 15px;
+        padding: 35px 25px;
+        font-size: 0.9em;
+    }
+
+    /* Subscribe */
+
+    .subscribe {
+        margin: 0 auto;
+        max-width: 870px;
+        padding-top: 10px;
+    }
+
+    .subscribe__heading {
+        font-size: 1.9em;
+    }
+
+    .subscribe__description {
+        max-width: 650px;
+        margin: 0 auto;
+        font-size: 0.9em;
+    }
+
+    .subscribe__form {
+        gap: 30px; 
+        display: flex;
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 35px 0 15px;
+    }
+
+    .subscribe__input {
+        width: 500px;
+    }
+
+    .subscribe__btn {
+        margin: 0;
+        width: 210px;
+    }
+
+    .button {
+        margin: 0;
+        padding: 20px 30px;
+    }
+
+    .subscribe__error {
+        margin: 7px 30px;
+    }
+
+    /******* Footer *******/
+
+    .footer {
+        margin-top: -130px;
+    }
+
+    .footer__wrapper {
+        display: grid;
+        grid-template-columns: 750px 100px 100px 100px;
+    }
+
+    .address__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "location phone"
+            "location email-address"
+        
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .phone {
+        grid-area: phone;
+    }
+
+    .email-address {
+        grid-area: email-address;
+    }
 }
