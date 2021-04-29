@@ -167,7 +167,7 @@ ul {
 .benefits__icon {
     display: block;
     margin: 0 auto;
-    width: 60px;
+    height: 70px;
 }
 
 .benefits__feature {
@@ -425,6 +425,7 @@ ul {
 
     .header__wrapper {
         padding: 50px;
+        max-width: 1200px;
     }
 
     .logo__img {
@@ -554,7 +555,6 @@ ul {
     }
 
     .button {
-        margin: 0;
         padding: 20px 30px;
     }
 
@@ -566,25 +566,39 @@ ul {
 
     .footer {
         margin-top: -130px;
+        font-size: 0.9em;
+        padding-top: 200px;
     }
 
     .footer__wrapper {
         display: grid;
-        grid-template-columns: 750px 100px 100px 100px;
+        grid-template-columns: 750px 140px 140px 140px;
+    }
+
+    .footer__logo-div {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .address__list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 450px 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
             "location phone"
-            "location email-address"
+            "location email-address";
         
+    }
+
+    .address__item {
+        margin-bottom: 5px;
     }
 
     .location {
         grid-area: location;
+        padding-right: 80px;
+        position: relative;
+        top: 10px;
     }
 
     .phone {
@@ -593,5 +607,10 @@ ul {
 
     .email-address {
         grid-area: email-address;
+    }
+
+    .footer__social {
+        margin: 20px 0 0 0;
+        width: 120px;
     }
 }
