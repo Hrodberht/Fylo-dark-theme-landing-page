@@ -32,7 +32,7 @@ html {
 
 body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    background-color: var(--dark-blue-main);
+    background-color: var(--dark-blue-intro);
     color: var(--white);
     margin: 0 auto;
 }
@@ -151,8 +151,12 @@ ul {
 
 /* Benefits */
 
+.benefits__wrapper {
+    background-color: var(--dark-blue-main);
+}
+
 .benefits {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .benefits__card {
@@ -181,8 +185,12 @@ ul {
 
 /* Objective */
 
+.objective__wrapper-1 {
+    background-color: var(--dark-blue-main);
+}
+
 .objective {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 }
 
 .objective__img-box {
@@ -216,13 +224,17 @@ ul {
 
 /* Feedback */
 
+.feedback__wrapper {
+    background-color: var(--dark-blue-main);
+}
+
 .feedback {
     padding-top: 9px;
+    padding-bottom: 150px;
     background-image: url('../images/bg-quotes.png');
     background-repeat: no-repeat;
     background-size: 25px;
     background-position-x: 40px;
-    margin-bottom: 150px;
 }
 
 .feedback__card {
@@ -260,9 +272,13 @@ ul {
 
 /* Subscribe */
 
+.subscribe__wrapper {
+    background-color: var(--dark-blue-main);
+}
+
 .subscribe {
     background-color: var(--dark-blue-feedback);
-    margin: 20px 20px 80px;
+    margin: 0 20px 80px;
     padding: 30px 20px 15px 20px;
     border-radius: 8px;
     text-align: center;
@@ -368,6 +384,8 @@ ul {
 .address__location {
     height: 35px;
     top: 0;
+    width: 30px;
+    flex-shrink: 0;
 }
 
 .address-text {
@@ -418,7 +436,7 @@ ul {
 @media only screen and (min-width: 1200px) {
     body {
         margin: 0 auto;
-        max-width: 1200px;
+        /* max-width: 1200px; */
     }
 
     /******* Header *******/
@@ -426,6 +444,7 @@ ul {
     .header__wrapper {
         padding: 50px;
         max-width: 1200px;
+        margin: 0 auto;
     }
 
     .logo__img {
@@ -474,7 +493,8 @@ ul {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         max-width: 900px;
-        margin: 0 auto 20px;
+        margin: 0 auto;
+        padding-bottom: 20px;
     }
 
     /* Objective */
@@ -482,13 +502,16 @@ ul {
     .objective {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        
+        max-width: 1200px;
     }
 
     .objective__img-box {
         margin: auto 0;
     }
 
-    .objective__wrapper {
+    .objective__wrapper-2 {
         margin: auto 0;
         position: relative;
         bottom: 15px;
@@ -504,6 +527,8 @@ ul {
 
     .feedback {
         display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
         grid-template-columns: 33% 33% 33%;
         background-size: 45px;
         background-position-x: 7px;
@@ -571,6 +596,11 @@ ul {
     }
 
     .footer__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer__content {
         display: grid;
         grid-template-columns: 750px 140px 140px 140px;
     }
