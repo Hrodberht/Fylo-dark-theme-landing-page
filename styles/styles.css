@@ -128,17 +128,13 @@ ul {
 
 /* Intro */
 
-.intro__wrapper {
-    background: linear-gradient(to bottom, var(--dark-blue-intro) 600px, var(--dark-blue-main) 600px);
-}
-
 .intro {
     margin-top: 20px;
     padding-bottom: 100px;
     background-image: url('../images/bg-curvy-mobile.svg');
     background-repeat: no-repeat;
     background-size: 100vw;
-    background-position-y: 250px;
+    background-position: bottom;
 }
 
 .intro__heading {
@@ -469,10 +465,6 @@ ul {
     /******* Main *******/
 
     /* Intro */
-
-    .intro__wrapper {
-        background: inherit;
-    }
 
     .intro {
         padding: 40px 40px 70px;
