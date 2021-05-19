@@ -437,10 +437,114 @@ ul {
 
 /******* Media Queries *******/
 
+/* Medium Resolution */
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+    /******* Main *******/
+
+    /* Intro */
+    
+    .intro__heading {
+        max-width: 440px;
+        margin: 0 auto;
+    }
+
+    .intro__description {
+        max-width: 70ch;
+        margin: 16px auto;
+    }
+
+    /* Benefits */
+
+    .benefits__description {
+        max-width: 70ch;
+        margin: 14.4px auto;
+    }
+
+    /* Objective */
+
+    .objective__wrapper-2 {
+        max-width: 70ch;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Feedback */
+
+    .feedback {
+        display: grid;
+        max-width: 800px;
+        margin: 0 auto;
+        grid-template-columns: 50% 50%;
+
+
+        background-position-x: 18px;
+        background-position-y: 0px;
+    }
+
+    .feedback__card:last-child {
+        position: relative;
+        left: 200px;
+    }
+
+    .feedback__card {
+        max-width: 50ch;
+        margin: 12.8px auto;
+    }
+
+    /* Subscribe */
+
+    .subscribe {
+        max-width: 800px;
+        margin: 0 auto 80px;
+    }
+
+    .subscribe__description {
+        max-width: 70ch;
+        margin: 16px auto 30px;
+    }
+
+    .subscribe__form {
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 35px;
+    }
+
+    .subscribe__btn {
+        margin-top: 0;
+    }
+
+    .button-2 {
+        margin: 0;
+    }
+
+    /******* Footer *******/
+
+    .footer__content {
+        display: grid;
+        grid-template-columns: 60% 20% 20%;
+    }
+
+    .address__list {
+        max-width: 50ch;
+        margin: 0 auto;
+    }
+    
+    .footer__social {
+        position: relative;
+        left: 33%;
+        margin-top: 0;
+    }
+}
+
+/* Large Resolution */
+
 @media only screen and (min-width: 1200px) {
     body {
         margin: 0 auto;
-        /* max-width: 1200px; */
     }
 
     /******* Header *******/
@@ -550,6 +654,10 @@ ul {
         font-size: 0.9em;
     }
 
+    .feedback__card:last-child {
+        left: 0;
+    }
+
     /* Subscribe */
 
     .subscribe {
@@ -623,6 +731,9 @@ ul {
         grid-template-areas: 
             "location phone"
             "location email-address";
+
+        margin: 1px;
+        max-width: 100%;
         
     }
 
