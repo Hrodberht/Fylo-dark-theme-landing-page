@@ -1,5 +1,7 @@
 # Frontend Mentor - Fylo dark theme landing page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d57b41d4-6184-45c6-9942-fd5f17bf1b48/deploy-status)](https://app.netlify.com/sites/fylo-dark-theme-mentor/deploys)
+
 ![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
